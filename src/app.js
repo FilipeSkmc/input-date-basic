@@ -28,7 +28,7 @@ export default class App extends LightningElement {
   //criei a função para email
   handleOnChangeEmail(event){
     this.email = event.detail.value;
-    console.log(event);
+    console.log(event.target.value);
     console.log("email: " + this.email);
   }
 

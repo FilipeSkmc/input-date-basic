@@ -16,18 +16,19 @@ export default class App extends LightningElement {
      * event.target.value
      */
 
-    this.nome = event.target.value;
+    this.nome = event.detail.value;
     console.log("nome: " + this.nome);
   }
 
   handleOnChangeTelefone(event){
-    this.telefone = event.target.value;
+    this.telefone = event.detail.value;
     console.log("tel: " + this.telefone);
   }
 
   //criei a função para email
   handleOnChangeEmail(event){
-    this.email = event.target.value;
+    this.email = event.detail.value;
+    console.log(event);
     console.log("email: " + this.email);
   }
 

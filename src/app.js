@@ -8,7 +8,7 @@ export default class App extends LightningElement {
   email = "";
 
   /**
-   * eventé um parametro que irá receber as informações do]
+   * event é um parametro que irá receber as informações do]
    * objeto.
    */
   handleOnChangeNome(event){
@@ -28,7 +28,6 @@ export default class App extends LightningElement {
   //criei a função para email
   handleOnChangeEmail(event){
     this.email = event.detail.value;
-    console.log(event.target.value);
     console.log("email: " + this.email);
   }
 
